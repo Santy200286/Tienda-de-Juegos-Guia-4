@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Portada Dragon Realms">
+  <defs><linearGradient id="a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7f1d1d"/><stop offset="1" stop-color="#1c1917"/></linearGradient></defs>
+  <rect width="400" height="500" fill="url(#a)"/>
+  <circle cx="200" cy="150" r="70" fill="#fbbf24" opacity=".9"/>
+  <path d="M0 330 L90 220 L160 300 L240 200 L320 290 L400 230 L400 500 L0 500 Z" fill="#292524"/>
+  <path d="M120 330 C140 250 200 220 270 250 C310 190 340 190 360 210 C330 220 320 240 310 262 C330 300 300 340 250 340 C220 370 160 370 120 330 Z" fill="#dc2626"/>
+  <path d="M200 270 L170 220 L225 255 Z M240 262 L225 205 L270 250 Z" fill="#b91c1c"/>
+  <circle cx="305" cy="238" r="5" fill="#fde047"/>
+  <path d="M355 250 L390 258 L360 270 Z" fill="#f97316"/>
+  <text x="200" y="450" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="36" fill="#fde68a">DRAGON REALMS</text>
+</svg>

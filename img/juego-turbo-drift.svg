@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Portada Turbo Drift">
+  <defs><linearGradient id="a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c4a6e"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs>
+  <rect width="400" height="500" fill="url(#a)"/>
+  <rect y="300" width="400" height="200" fill="#1e293b"/>
+  <path d="M170 300 L230 300 L330 500 L70 500 Z" fill="#334155"/>
+  <path d="M200 310 L200 340 M200 360 L200 400 M200 420 L200 480" stroke="#fde047" stroke-width="6"/>
+  <g transform="translate(200 250)">
+    <rect x="-70" y="-10" width="140" height="42" rx="14" fill="#ef4444"/>
+    <path d="M-45 -10 L-25 -38 L25 -38 L45 -10 Z" fill="#fca5a5"/>
+    <circle cx="-42" cy="34" r="14" fill="#0f172a"/><circle cx="42" cy="34" r="14" fill="#0f172a"/>
+    <rect x="-60" y="5" width="20" height="8" rx="3" fill="#fef08a"/><rect x="40" y="5" width="20" height="8" rx="3" fill="#fef08a"/>
+  </g>
+  <path d="M20 200 L120 200 M0 225 L90 225 M300 190 L390 190" stroke="#7dd3fc" stroke-width="4" opacity=".6"/>
+  <text x="200" y="450" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="40" fill="#e0f2fe">TURBO DRIFT</text>
+</svg>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PixelPlay: tienda virtual de videojuegos, consolas y accesorios con los mejores precios.">
+  <title>PixelPlay | Tienda de Videojuegos</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ENCABEZADO Y MENÚ DE NAVEGACIÓN -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="PixelPlay, ir al inicio">
+        <img src="img/logo.svg" alt="" width="40" height="40">
+        <span>PixelPlay</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPrincipal">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <nav class="main-nav" id="menuPrincipal" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a href="#catalogo" class="cart-pill" aria-label="Carrito de compras">
+        🛒 <span id="cartCount">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Nueva temporada 2026</p>
+          <h1>Sube de nivel tu colección de videojuegos</h1>
+          <p class="lead">Lanzamientos, clásicos y accesorios para PlayStation, Xbox, Nintendo y PC. Envíos a todo el país.</p>
+          <div class="hero-actions">
+            <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
+            <a href="#ofertas" class="btn btn-ghost">Ofertas de la semana</a>
+          </div>
+        </div>
+        <img class="hero-img" src="img/hero.svg" alt="Control de videojuegos sobre un fondo de neón morado y turquesa" width="1200" height="600">
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="benefits" aria-label="Beneficios de comprar en PixelPlay">
+      <div class="container grid-4">
+        <article class="benefit">
+          <span class="benefit-icon" aria-hidden="true">🚚</span>
+          <h2>Envío rápido</h2>
+          <p>Entrega en 2 a 5 días hábiles.</p>
+        </article>
+        <article class="benefit">
+          <span class="benefit-icon" aria-hidden="true">🔒</span>
+          <h2>Pago seguro</h2>
+          <p>Tarjeta, PSE y contraentrega.</p>
+        </article>
+        <article class="benefit">
+          <span class="benefit-icon" aria-hidden="true">✅</span>
+          <h2>Garantía</h2>
+          <p>Productos 100% originales.</p>
+        </article>
+        <article class="benefit">
+          <span class="benefit-icon" aria-hidden="true">💬</span>
+          <h2>Soporte</h2>
+          <p>Atención de lunes a sábado.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section class="section" id="catalogo">
+      <div class="container">
+        <header class="section-head">
+          <h2>Catálogo de juegos</h2>
+          <p>Filtra por plataforma y agrega tus favoritos al carrito.</p>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filtrar por plataforma">
+          <button class="chip is-active" data-filter="todos">Todos</button>
+          <button class="chip" data-filter="playstation">PlayStation</button>
+          <button class="chip" data-filter="xbox">Xbox</button>
+          <button class="chip" data-filter="nintendo">Nintendo</button>
+          <button class="chip" data-filter="pc">PC</button>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+          <article class="card" data-platform="playstation">
+            <img src="img/juego-galaxy-rush.svg" alt="Portada del juego Galaxy Rush" loading="lazy" width="400" height="500">
+            <div class="card-body">
+              <span class="tag">PlayStation</span>
+              <h3>Galaxy Rush</h3>
+              <p>Aventura espacial de acción con batallas en gravedad cero.</p>
+              <div class="card-foot">
+                <strong class="price">$189.900</strong>
+                <button class="btn btn-small add-to-cart" data-name="Galaxy Rush">Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-platform="xbox">
+            <img src="img/juego-dragon-realms.svg" alt="Portada del juego Dragon Realms" loading="lazy" width="400" height="500">
+            <div class="card-body">
+              <span class="tag">Xbox</span>
+              <h3>Dragon Realms</h3>
+              <p>RPG de mundo abierto con dragones, magia y misiones épicas.</p>
+              <div class="card-foot">
+                <strong class="price">$219.900</strong>
+                <button class="btn btn-small add-to-cart" data-name="Dragon Realms">Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-platform="pc">
+            <img src="img/juego-turbo-drift.svg" alt="Portada del juego Turbo Drift" loading="lazy" width="400" height="500">
+            <div class="card-body">
+              <span class="tag">PC</span>
+              <h3>Turbo Drift</h3>
+              <p>Carreras arcade con derrapes, autos personalizables y multijugador.</p>
+              <div class="card-foot">
+                <strong class="price">$129.900</strong>
+                <button class="btn btn-small add-to-cart" data-name="Turbo Drift">Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-platform="nintendo">
+            <img src="img/juego-pixel-farm.svg" alt="Portada del juego Pixel Farm" loading="lazy" width="400" height="500">
+            <div class="card-body">
+              <span class="tag">Nintendo</span>
+              <h3>Pixel Farm</h3>
+              <p>Simulador de granja relajante para jugar solo o con amigos.</p>
+              <div class="card-foot">
+                <strong class="price">$149.900</strong>
+                <button class="btn btn-small add-to-cart" data-name="Pixel Farm">Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-platform="playstation">
+            <img src="img/juego-shadow-ops.svg" alt="Portada del juego Shadow Ops" loading="lazy" width="400" height="500">
+            <div class="card-body">
+              <span class="tag">PlayStation</span>
+              <h3>Shadow Ops</h3>
+              <p>Shooter táctico de sigilo con campaña cooperativa.</p>
+              <div class="card-foot">
+                <strong class="price">$199.900</strong>
+                <button class="btn btn-small add-to-cart" data-name="Shadow Ops">Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-platform="xbox">
+            <img src="img/juego-kick-legends.svg" alt="Portada del juego Kick Legends" loading="lazy" width="400" height="500">
+            <div class="card-body">
+              <span class="tag">Xbox</span>
+              <h3>Kick Legends</h3>
+              <p>Fútbol arcade con equipos de leyendas y torneos en línea.</p>
+              <div class="card-foot">
+                <strong class="price">$179.900</strong>
+                <button class="btn btn-small add-to-cart" data-name="Kick Legends">Agregar</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- OFERTAS -->
+    <section class="section section-alt" id="ofertas">
+      <div class="container offer">
+        <div class="offer-text">
+          <p class="eyebrow">Oferta de la semana</p>
+          <h2>Combo Gamer: juego + control + 20% de descuento</h2>
+          <p>Lleva cualquier juego del catálogo con un control inalámbrico y recibe un descuento especial por tiempo limitado.</p>
+          <p class="countdown" aria-live="polite">Termina en: <strong id="countdown">--:--:--</strong></p>
+          <a href="#contacto" class="btn btn-primary">Quiero mi combo</a>
+        </div>
+        <div class="offer-badge" aria-hidden="true">
+          <span>-20%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES (secciones desplegables) -->
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <header class="section-head">
+          <h2>Preguntas frecuentes</h2>
+        </header>
+        <details class="faq-item">
+          <summary>¿Cuánto tarda el envío?</summary>
+          <p>Entre 2 y 5 días hábiles en ciudades principales y hasta 8 días en zonas rurales.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Los juegos son originales?</summary>
+          <p>Sí. Todos los productos son nuevos, sellados y con garantía del fabricante.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Puedo cambiar un producto?</summary>
+          <p>Tienes 10 días para solicitar cambio si el producto está sin abrir y en su empaque original.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Qué medios de pago aceptan?</summary>
+          <p>Tarjetas débito y crédito, PSE, transferencia y pago contraentrega.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACTO (formulario) -->
+    <section class="section section-alt" id="contacto">
+      <div class="container contact">
+        <div class="contact-info">
+          <h2>Contáctanos</h2>
+          <p>¿Dudas sobre un pedido o quieres un juego que no ves en el catálogo? Escríbenos y te respondemos en menos de 24 horas.</p>
+          <ul class="contact-list">
+            <li> Bogotá, Colombia</li>
+            <li> +57 322 885 2689</li>
+            <li> contacto@pixelplay.com</li>
+          </ul>
+        </div>
+
+        <form class="form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            <small class="error" id="errNombre"></small>
+          </div>
+          <div class="field">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+            <small class="error" id="errCorreo"></small>
+          </div>
+          <div class="field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+            <small class="error" id="errMensaje"></small>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
+          <p class="form-ok" id="formOk" role="status" hidden>¡Gracias! Recibimos tu mensaje.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#inicio" class="brand">
+          <img src="img/logo.svg" alt="" width="36" height="36">
+          <span>PixelPlay</span>
+        </a>
+        <p>Tu tienda de videojuegos de confianza.</p>
+      </div>
+      <nav aria-label="Enlaces del pie de página">
+        <h2>Enlaces</h2>
+        <ul>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Síguenos</h2>
+        <ul>
+          <li><a href="#" aria-label="Instagram de PixelPlay">Instagram</a></li>
+          <li><a href="#" aria-label="YouTube de PixelPlay">YouTube</a></li>
+          <li><a href="#" aria-label="Discord de PixelPlay">Discord</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 PixelPlay. Proyecto académico, todos los derechos reservados.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
